@@ -1,0 +1,23 @@
+.box {
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.time {
+    border-bottom: solid 2px gray;
+    padding: 5px;
+}
+
+.input {
+    display: flex;
+}
+
+.input p {
+    width: 350px;
+    margin: 0;
+}
+
+.time-up {
+    text-align: center;
+}

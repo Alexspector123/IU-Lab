@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    margin: auto;
+}
+
+.container h2 {
+    font-size: 30px;
+}
+
+.space {
+    position: relative;
+    width: 400px;
+}
+
+.input-box {
+    font-size: 17px;
+    border-radius: 20px;
+    border-width: 2px;
+    min-width: 400px;
+    min-height: 100px;
+
+    padding: 10px;
+}
+
+.input-box:focus {
+    outline: none;
+}
+.input-box-alert {
+    border-color:  red;
+}
+
+.input-box-alert:focus {
+    border-color: red;
+}
+
+.words {
+    position: absolute;
+    right: 0;
+    bottom: calc(100% - 110px);
+}
+
+.words-alert {
+    color: red;
+}

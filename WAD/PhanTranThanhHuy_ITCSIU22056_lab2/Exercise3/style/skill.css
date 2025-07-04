@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Abril Fatface";
+}
+
+body {
+    padding-top: 80px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 80px;
+    height: 550px;
+}
+
+.content {
+    width: 400px;
+}
+
+.skill-name {
+    background-color: rgb(163, 131, 239);
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.skill-description {
+    font-size: 25px;
+    font-family: Arial;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex1.css">
+    <title>Exercise 1</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Register for an Account</h1>
+        <div class="notify"></div>
+        <div></div>
+        <div>
+            <div class="input">
+                <label for="Email">Email:</label>
+                <input type="email" class="email">
+                <div class="email-dot"></div>
+            </div>
+            <div class="input">
+                <label for="Phone">Mobile Phone:</label>
+                <input type="tel" class="phone" inputmode="numeric">
+                <div class="phone-dot"></div>
+            </div>
+            <div class="input">
+                <label for="Country">Country:</label>
+                <select name="Country" class="country">
+                    <option value="">Select a country</option>
+                    <option value="VN">VietNam</option>
+                    <option value="USA">America</option>
+                </select>
+                <div class="country-dot"></div>
+            </div>
+            <div class="input">
+                <label for="Contact">Contact me by:</label>
+                <div>
+                    <input type="radio" id="text" name="contact" value="TEXT">
+                    <label for="text-radio">Text</label>
+                    <input type="radio" id="email" name="contact" value="EMAIL">
+                    <label for="email-radio">Email</label>
+                    <input type="radio" id="not" name="contact" value="NOT">
+                    <label for="not-radio">Don't contact me</label>
+                </div>
+            </div>
+            <div class="input">
+                <label for="Terms">Terms of Service:</label><input type="checkbox" class="terms">
+                <p>I accept</p>
+                <div class="terms-dot"></div>
+            </div>
+            <div class="input">
+                <label></label>
+                <div>
+                    <button class="register">Register</button>
+                    <button class="reset">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="ex1.js"></script>
+</body>
+</html>

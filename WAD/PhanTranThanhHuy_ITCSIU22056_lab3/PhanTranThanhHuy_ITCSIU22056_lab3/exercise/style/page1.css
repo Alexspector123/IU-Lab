@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+html { 
+    background-color: white; 
+}
+
+body {
+    background-color: white;
+    margin: 50px;
+}
+
+.head-container { 
+    display: flex;
+    align-items: center;
+
+    background-image: linear-gradient(to right, rgb(247, 194, 126), white, rgb(247, 194, 126));
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.logo{
+    width: 150px;
+
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.title{
+    font-size: 40px;
+    color: rgb(155, 27, 40);
+}
+
+.head-container div p:nth-child(2) span {
+    text-shadow: 2px 2px 2px rgba(155, 27, 40, 0.9);
+}
+
+nav {
+    background-color: rgb(155, 27, 40);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    margin: 0 110px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 27px;
+    transition: all ease 0.3s;
+}
+
+nav ul li a:hover{
+    color: #ef9c00;
+}
+
+.submenu {
+    background-color: rgb(155, 27, 40);
+    position: absolute;
+    width: 200px;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    z-index: -999;
+    transition: all ease 0.3s;
+}
+
+.submenu li {
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+    text-align: center;
+}
+
+nav ul li:hover .submenu{
+    opacity: 1;
+    z-index: 999;
+}
+
+.main-container {
+    background-color: rgb(255, 253, 240);
+    
+    padding: 15px;
+    display: flex;
+}
+
+h2{
+    color: rgb(155, 27, 40);
+    font-size: 40px;
+    margin: 5px;
+}
+
+.guest-content {
+    width: 1000px;
+    float: left;
+
+    padding-left: 20px;
+}
+
+.guest-content > ul li {
+    list-style: none;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.guest-content ul li a {
+    color: blue;
+}
+
+.guest-content ul li > img {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    display: block;
+}
+
+.main-content {
+    font-size: 30px;
+}
+
+blockquote {
+    margin-left: 20px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.box {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 5px solid;
+    border-bottom: 5px solid;
+
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.box img{
+    float: right;
+    width: 300px;
+    height: 300px;
+    margin-left: 15px;
+}
+
+.box-content {
+    display: flex;
+}
+
+.box-content div a {
+    color: blue;
+}
+
+.ticket-season ul {
+    padding-left: 40px;
+    list-style: circle;
+}
+
+footer {
+    clear: both;
+    background-color: rgb(155, 27, 40);
+    color: white;
+    padding: 30px 20px 30px 20px;
+    text-align: center;
+    font-size: 30px;
+}

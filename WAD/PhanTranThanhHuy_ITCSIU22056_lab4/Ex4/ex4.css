@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+
+body {
+    max-width: 2400px;
+    margin: 0 auto;
+}
+
+.header {
+    font-size: 30px;
+}
+
+.profile {
+    width: 80px;
+    margin-right: 10px;
+}
+
+.navigation-menu p span a {
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+}
+
+.title {
+    height: 256px;
+}
+
+.title div > p:first-child {
+    font-family: "Patrick Hand", cursive;
+    font-size: 80px;
+}
+
+.title div > p:nth-child(2) {
+    color: gray;
+    font-size: 25px;
+}
+
+.content * {
+    margin-bottom: 10px;
+}
+
+.content h2, h3 {
+    font-family: "Patrick Hand", cursive;
+}
+
+.projects-section p:not(:last-child),
+.experience-section div:not(:last-child) {
+    border-bottom: #000 3px solid;
+}
+
+.education-section li {
+    list-style: none;
+    padding-left: 0;
+}
+
+.education-section li::before {
+    content: "-";
+    margin-right: 8px;
+}
+
+.review-box {
+    border-radius: 70px;
+}
+
+footer {
+    font-family: "Patrick Hand", cursive;
+    font-size: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .title div p:first-child {
+        font-size: 45px;
+    }
+
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .projects-section, 
+    .experience-section, 
+    .education-section {
+        border-right: none;
+        border-bottom: 3px solid #000;
+    }
+
+    .projects-section p,
+    .experience-section div {
+        background-color: rgb(194, 194, 194);
+        padding: 10px 10px;
+    }
+
+    .review-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review-box {
+        width: 90%;
+    }
+
+    footer {
+        font-size: 25px;
+    }
+
+    .review-box:nth-child(2),
+    .review-box:nth-child(3) {
+        display: none;
+    }
+}
