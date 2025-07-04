@@ -1,0 +1,6 @@
+VERB=1
+SUB=2
+ID=3
+E_Mask=4
+WS=5
+'?'=4
